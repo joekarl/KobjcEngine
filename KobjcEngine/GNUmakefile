@@ -10,31 +10,31 @@ endif
 
 include $(GNUSTEP_MAKEFILES)/common.make
 
+
 #
 # Library
 #
 VERSION = 0.1
-PACKAGE_NAME = kobjcEngine
-LIBRARY_NAME = kobjcEngine
-
-kobjcEngine_HEADER_FILES_DIR = ./kobjcEngine_headers
+PACKAGE_NAME = KobjcEngine
+LIBRARY_NAME = KobjcEngine
 
 #
 # Header files
 #
-kobjcEngine_HEADER_FILES = \
-
+KobjcEngine_HEADER_FILES = \
+IGame.h \
+Kobjc.h
 
 #
 # Class files
 #
-kobjcEngine_OBJC_FILES = \
-
+KobjcEngine_OBJC_FILES = \
+Kobjc.m
 
 #
 # Other sources
 #
-kobjcEngine_OBJC_FILES += \
+KobjcEngine_OBJC_FILES += \
 
 
 #

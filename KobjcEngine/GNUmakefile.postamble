@@ -6,7 +6,8 @@
 # before-all::
 
 # Things to do after compiling
-# after-all::
+after-all::
+	ar rcs ./obj/libKobjcEngine.a ./obj/libKobjcEngine.so
 
 # Things to do before installing
 # before-install::

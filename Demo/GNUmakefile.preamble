@@ -6,20 +6,27 @@
 ADDITIONAL_CPPFLAGS += 
 
 # Additional flags to pass to Objective C compiler
-ADDITIONAL_OBJCFLAGS += 
+ADDITIONAL_OBJCFLAGS +=
 
 # Additional flags to pass to C compiler
-ADDITIONAL_CFLAGS += 
+ADDITIONAL_CFLAGS += \
+-Wl,-rpath ./obj
 
 # Additional flags to pass to the linker
-ADDITIONAL_LDFLAGS +=  
+ADDITIONAL_LDFLAGS += \
+
 
 # Additional include directories the compiler should search
-ADDITIONAL_INCLUDE_DIRS += 
+ADDITIONAL_INCLUDE_DIRS += \
+-I../
 
 # Additional library directories the linker should search
-ADDITIONAL_LIB_DIRS += 
+ADDITIONAL_LIB_DIRS += \
+-L../KobjcEngine/obj 
+
 
 # Additional TOOL libraries to link
-ADDITIONAL_TOOL_LIBS += 
+ADDITIONAL_TOOL_LIBS +=  \
+-lKobjcEngine
+
 

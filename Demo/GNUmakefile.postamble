@@ -6,7 +6,8 @@
 # before-all::
 
 # Things to do after compiling
-# after-all::
+after-all::
+	cp ../KobjcEngine/obj/libKobjcEngine.so* ./obj/
 
 # Things to do before installing
 # before-install::

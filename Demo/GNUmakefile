@@ -15,33 +15,32 @@ include $(GNUSTEP_MAKEFILES)/common.make
 #
 VERSION = 0.1
 PACKAGE_NAME = kobjcEngineDemo1
-TOOL_NAME = kobjcEngineDemo
+TOOL_NAME = kobjcEngineDemo1
 
 SUBPROJECTS = ../KobjcEngine
 
 #
 # Resource files
 #
-kobjcEngineDemo_RESOURCE_FILES = \
+kobjcEngineDemo1_RESOURCE_FILES = \
 Resources/Version \
-
 
 #
 # Header files
 #
-kobjcEngineDemo_HEADER_FILES = \
+kobjcEngineDemo1_HEADER_FILES = \
 
 
 #
 # Class files
 #
-kobjcEngineDemo_OBJC_FILES = \
+kobjcEngineDemo1_OBJC_FILES = \
 
 
 #
 # Other sources
 #
-kobjcEngineDemo_OBJC_FILES += \
+kobjcEngineDemo1_OBJC_FILES += \
 demo1/main.m
 
 #
