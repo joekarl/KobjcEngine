@@ -7,7 +7,10 @@
 
 # Things to do after compiling
 after-all::
-	cp ../KobjcEngine/obj/libKobjcEngine.so* ./obj/
+	mkdir dist
+	mkdir dist/lib
+	cp ../KobjcEngine/obj/libKobjcEngine.so* ./dist/lib
+	cp ./obj/kobjcEngineDemo1 ./dist
 
 # Things to do before installing
 # before-install::
@@ -22,7 +25,8 @@ after-all::
 # after-uninstall::
 
 # Things to do before cleaning
-# before-clean::
+before-clean::
+	rm -rf ./dist
 
 # Things to do after cleaning
 # after-clean::

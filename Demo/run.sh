@@ -1,2 +1,2 @@
 #!/bin/bash
-LD_LIBRARY_PATH=./obj:$LD_LIBRARY_PATH ./obj/kobjcEngineDemo1 
+LD_LIBRARY_PATH=./dist/lib:$LD_LIBRARY_PATH ./dist/kobjcEngineDemo1 
