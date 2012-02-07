@@ -25,6 +25,8 @@ int main(int argc, char **argv) {
     Game *game = [[Game alloc] init];
     
     [Kobjc initWithGame:game];
+
+    [game dealloc];
     
     return 0;
 }

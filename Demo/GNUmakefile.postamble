@@ -7,8 +7,8 @@
 
 # Things to do after compiling
 after-all::
-	mkdir dist
-	mkdir dist/lib
+	mkdir -p dist
+	mkdir -p dist/lib
 	cp ../KobjcEngine/obj/libKobjcEngine.so* ./dist/lib
 	cp ./obj/kobjcEngineDemo1 ./dist
 
