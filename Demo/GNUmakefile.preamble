@@ -10,7 +10,7 @@ ADDITIONAL_OBJCFLAGS +=
 
 # Additional flags to pass to C compiler
 ADDITIONAL_CFLAGS += \
--Wl,-rpath ./obj
+ `sdl-config --cflags --libs`
 
 # Additional flags to pass to the linker
 ADDITIONAL_LDFLAGS += \
@@ -27,6 +27,9 @@ ADDITIONAL_LIB_DIRS += \
 
 # Additional TOOL libraries to link
 ADDITIONAL_TOOL_LIBS +=  \
--lKobjcEngine
+-lKobjcEngine \
+-lSDL \
+-lGL \
+-lGLU
 
 

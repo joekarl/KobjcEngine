@@ -1,5 +1,6 @@
 
 #import <Foundation/Foundation.h>
+#import <SDL/SDL.h>
 
 @protocol IGame
 
@@ -13,6 +14,6 @@
 
 @required
 -(void)update:(long)dt;
--(void)render:(float)i;
+-(void)render:(float)i withSurface:(SDL_Surface *)surface;
 
 @end

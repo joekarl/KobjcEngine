@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <KobjcEngine/IGame.h>
 #import <KobjcEngine/Kobjc.h>
+#import <SDL/SDL.h>
 
 @interface Game : NSObject <IGame>
 
@@ -13,7 +14,7 @@
 
 }
 
--(void)render:(float)i
+-(void)render:(float)i withSurface:(SDL_Surface *)surface
 {
 
 }

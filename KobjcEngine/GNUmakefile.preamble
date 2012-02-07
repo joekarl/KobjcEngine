@@ -9,7 +9,8 @@ ADDITIONAL_CPPFLAGS +=
 ADDITIONAL_OBJCFLAGS += 
 
 # Additional flags to pass to C compiler
-ADDITIONAL_CFLAGS += 
+ADDITIONAL_CFLAGS += \
+ `sdl-config --cflags --libs`
 
 # Additional flags to pass to the linker
 ADDITIONAL_LDFLAGS +=  
@@ -21,5 +22,8 @@ ADDITIONAL_INCLUDE_DIRS +=
 ADDITIONAL_LIB_DIRS += 
 
 # Additional TOOL libraries to link
-ADDITIONAL_TOOL_LIBS += 
+ADDITIONAL_TOOL_LIBS += \
+-lSDL \
+-lGL \
+-lGLU
 
