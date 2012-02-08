@@ -17,3 +17,8 @@ The basics follow are:
 * Create an object the implements the IGame protocol
 * implement the update and render methods
 * Call [Kobjc runGame:id<IGame>]; to run the game
+
+---------------------------------------------
+Things to note 
+
+* Currently the engine doesn't wrap each game loop in an autorelease pool because it is slow. So be aware.... (can be easily implemented in your IGame implementation)
