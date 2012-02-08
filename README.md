@@ -9,3 +9,10 @@ Dependencies are
 * gnustep-devel
 * SDL
 * OpenGl
+
+---------------------------------------------
+The basics follow are:
+
+* Create an object the implements the IGame protocol
+* implement the update and render methods
+* Call [Kobjc runGame:id<IGame>]; to run the game

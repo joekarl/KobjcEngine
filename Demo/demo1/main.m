@@ -6,5 +6,5 @@ int main(int argc, char **argv) {
 
     Demo *demo = [[Demo alloc] init];
     
-    return [Kobjc initWithGame:demo];
+    return [Kobjc runGame:demo];
 }

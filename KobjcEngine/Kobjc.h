@@ -7,6 +7,6 @@
 
 }
 
-+(int)initWithGame:(id<IGame>)game;
++(int)runGame:(id<IGame>)game;
 
 @end
