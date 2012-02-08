@@ -29,13 +29,13 @@ Resources/Version \
 # Header files
 #
 kobjcEngineDemo1_HEADER_FILES = \
-
+demo1/Demo.h
 
 #
 # Class files
 #
 kobjcEngineDemo1_OBJC_FILES = \
-
+demo1/Demo.m
 
 #
 # Other sources

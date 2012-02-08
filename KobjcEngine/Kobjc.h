@@ -7,6 +7,6 @@
 
 }
 
-+(void)initWithGame:(id<IGame> *)game;
++(int)initWithGame:(id<IGame>)game;
 
 @end

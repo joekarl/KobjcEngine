@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import <SDL/SDL.h>
 
-@protocol IGame
+@protocol IGame <NSObject>
 
 @optional
 -(void)initGame;
