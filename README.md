@@ -9,6 +9,7 @@ Dependencies are
 * gnustep-devel
 * SDL
 * OpenGl
+* GCC 4.6 or higher (needs objc-2.0 features)
 
 ---------------------------------------------
 The basics follow are:
