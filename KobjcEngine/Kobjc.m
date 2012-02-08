@@ -23,6 +23,7 @@
 
 	//show window
 	SDL_Surface* surface = SDL_SetVideoMode( 1024, 768, 16, SDL_OPENGL ); 
+	SDL_WM_SetCaption("Kobjc Engine","Kobjc Engine");
 
 	//init hook
 	if ([game respondsToSelector:@selector(initGame)]) {
