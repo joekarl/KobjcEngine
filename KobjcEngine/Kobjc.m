@@ -22,7 +22,7 @@
 	SDL_GL_SetAttribute( SDL_GL_DOUBLEBUFFER, 1 ); 
 
 	//show window
-	SDL_Surface* surface = SDL_SetVideoMode( 640, 480, 16, SDL_OPENGL ); 
+	SDL_Surface* surface = SDL_SetVideoMode( 1024, 768, 16, SDL_OPENGL ); 
 
 	//init hook
 	if ([game respondsToSelector:@selector(initGame)]) {
@@ -44,6 +44,9 @@
 	Uint32 nextUpdate = SDL_GetTicks();
 	int skipLoops;
 	float interpolation;
+	float fps = 0;
+	int fpsCount = 0;
+	Uint32 currentFpsTime = 0, lastFpsTime = 0;
 
 	while(running) {
 		skipLoops = 0;
@@ -77,7 +80,20 @@
 		[game render:interpolation withSurface:surface];
 		if (respondsToPostRender) [game postRender];
 
-		SDL_Delay(1);
+		//flip to screen
+		SDL_GL_SwapBuffers();
+
+		//update fps count
+		fpsCount++;
+		currentFpsTime = SDL_GetTicks();
+		if (currentFpsTime - lastFpsTime > 1000) {
+			fps = fpsCount;
+			NSLog(@"FPS[%3.0f]",fps);
+			lastFpsTime = currentFpsTime;
+			fpsCount = 0;
+		}
+
+		//SDL_Delay(1);
 	}
 
 	//shutdown hook

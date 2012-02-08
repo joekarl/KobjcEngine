@@ -10,7 +10,7 @@ ADDITIONAL_OBJCFLAGS +=
 
 # Additional flags to pass to C compiler
 ADDITIONAL_CFLAGS += \
- `sdl-config --cflags --libs`
+`sdl-config --cflags --libs` 
 
 # Additional flags to pass to the linker
 ADDITIONAL_LDFLAGS +=  
