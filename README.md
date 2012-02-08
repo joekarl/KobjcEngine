@@ -5,6 +5,7 @@ The project is using GNUmakefiles for building so should be fairly simple. To bu
 The engine is output as a shared and a static library for easy use.
 
 Dependencies are 
+
 * gnustep-devel
 * SDL
 * OpenGl
